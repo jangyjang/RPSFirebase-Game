@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+	<meta charset="UTF-8">
+	<title>Rock Paper Scisscors</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+ 	<div class="row"> <!--row one starts here -->
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="jumbotron">
+			  <h1>Super RPS</h1>
+			</div>
+		</div>
+	</div><!--row one ends here -->
+
+
+	<div class="row"><!--row two starts here -->
+	 	<div class="col-xs-12 col-sm-12 col-md-12">
+			<form class="form-inline" id="nameForm">
+			  <div class="form-group">
+			    <label for="nameInput"></label>
+			    <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+			  </div>
+			  <button type="submit" class="btn btn-default" id="submitName">Submit</button>
+			</form>
+	 	</div>
+	</div><!--row two ends here -->
+
+	<div class="mainArea">
+		<div class="row"><!--row three starts here -->
+			<div class="col-xs-4 col-sm-4"> <!--row three column 1 starts here-->
+				<div class="row"> <!--row three column 1 subrow 1 starts here-->
+			  		<div class="col-xs-4 col-sm-4" id="player1Name">Player 1</div>
+			  	</div> <!--row three column 1 subrow 1 ends here-->
+			  	<div class="row"> <!--row three column 1 subrow 2 starts here-->
+			  		<div class="col-xs-4 col-sm-4" id="p1Choices">
+						<img src="assets/images/rock.jpg" alt="rock" class="img-rounded" id="p1Rock">
+						<img src="assets/images/paper.jpg" alt="paper" class="img-rounded" id="p1Paper">
+						<img src="assets/images/scissors.jpg" alt="scissors" class="img-rounded" id="p1Scissors">
+				  	</div> 
+				</div> <!--row three column 1 subrow 2 ends here-->
+			 </div> <!--row three column 1 ends here-->
+	
+
+		  	<div class="col-xs-4 col-sm-4" id="annoucement">Instructional Msg</div> <!--row three column 2 starts here-->
+
+			<div class="col-xs-4 col-sm-4"> <!--row three column 3 starts here-->
+			  	<div class="row">  <!--row three column 3 subrow 1 starts here-->
+			  		<div class="col-xs-4 col-sm-4" id="player2Name">Player 2</div>
+			  	</div> <!--row three column 3 subrow 1 ends here-->
+		  		<div class="row"> <!--row three column 3 subrow 2 starts here-->
+			  		<div class="col-xs-4 col-sm-4" id="p2Choices">
+						<img src="assets/images/rock.jpg" alt="Rock" class="img-rounded" id="p2Rock">
+						<img src="assets/images/paper.jpg" alt="Paper" class="img-rounded" id="p2Paper">
+						<img src="assets/images/scissors.jpg" alt="Scissors" class="img-rounded" id="p2Scissors">
+			  		</div>
+		  		</div> <!--row three column 3 subrow 2 ends here-->
+		  	</div><!--row three column 2 ends here-->
+		</div><!--row three ends here -->
+	</div><!--mainArea ends here -->
+
+
+	<div class="row"><!--row four starts here -->
+	  	<div class="col-xs-12 col-sm-12 col-md-12" id="chatArea">Chat area</div>
+	</div><!--row four ends here -->
+ 	
+
+
+ </div>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript" src="assets/javascript/moment.js"></script>
+ <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
